@@ -22,7 +22,6 @@ import Controls from './Controls.js'
 import Sounds from './Sounds.js'
 import { TweenLite } from 'gsap/TweenLite'
 import { Power2 } from 'gsap/EasePack'
-import EasterEggs from './EasterEggs.js'
 
 export default class
 {
@@ -75,7 +74,6 @@ export default class
         this.setTiles()
         this.setWalls()
         this.setSections()
-        this.setEasterEggs()
     }
 
     setReveal()
@@ -199,7 +197,7 @@ export default class
         this.startingScreen.startLabel = {}
         this.startingScreen.startLabel.geometry = new THREE.PlaneBufferGeometry(2.5, 2.5 / 4)
         this.startingScreen.startLabel.image = new Image()
-        this.startingScreen.startLabel.image.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAABABAMAAAAHc7SNAAAAMFBMVEUAAAD///+cnJxra2vR0dHd3d0mJib09PRYWFjp6em4uLhCQkKqqqqNjY19fX3FxcV3XeRgAAADsklEQVRo3u3YsU9TQRwH8KNgLSDQg9ZCAak1IdE4PKPu1NTEsSzOMDl3I3GpcXAxBhLjXFxNjJgQJ2ON0Rnj4uAAEyv8B/L7tV++5/VN+CM69Ldwfa+534d7d793VzeIQQzi/49c4v5lPF/1vvhFm++rjIpcyErrmrSCuz+cxng1iL/If8drPJD2Lc/Iy4VhaZWlFd4tLPfuMc6e/5LvRilJA2SkVSQA8c0OsI0uNtIAU9rsB8y1rAAZjyimAUa1mQDAeGwF+MA+9lIA69qs9AMKVoDP8vhf35A+NiMAc7YJKFSrX7tcI8BW9+k/O/kz6zSunjSnncMHiQYBcmdXrh3xCVbc2WO8N/YZZI0AxxwMArKivmwAwFKSPmV0UwBbCpj5E+C+yzUbQAaJVwUSA9SFjwFgHQ0jAMrBWgzAPCtHgFFbQAlpEwKC2zWUQgJGbAH+naSdu/fTxQAthPL5/ADD6OCpQwCAsb6LsbEGcBluOAYBmG2fkMIawHVWXEsDIGUGpZCAIRsAS93DPgDbhUmUQgKe2NUB90hfhK0YwEJYHkYpJGDbqBKiB86CGLAlzd6/S8CEvh8sACiBvrSXCshKblWEgNy2vkAMAHwGfjECcJHOu5qUQgDm6vXulshZAXJNL9GJAeg+LxeKPQBj1gzgdlnuCWAhbOi7LwaU9u0A2VWPpUgAC+GR5k0iwBtnB3Bj3qMaRYB17X0IOQhYcjYA7guxxyIAGfd1HNqchPfly7aACQUshAA2W1r5G1yG415YpgB3qIIkAHBH2D075QnQ10fHDsCl+CoGSKpiN8kMAVqIN00BsitnVgKyPIBMB4ADKU92AA5BKQIgszjKBGBLagpwB5xZBGS6pbcuizQAXMA6NAK86OCQ3okAI55BQPe7VoDxXzU/iwPASgS4GAASAiYxWgYAzvAa1loA2AkAFQIU2zEELCJtDDgIAG0CFLvp7LblC2kAtF6eTEJJ2CBAr88bAXKY4WkASbzXmwt5AvTvohHA4WSUBmj2Jt+IThQChrAOLQC13vPFMAOAQwuyTAeAKVQto3OBDOdESh2YxNZPbpYBQNbEAoBfod7e1i1BiwB0voSZWgwAOWgtAGPhD18E8ASIiRIAXNPwXJBtcqMbAFAIr5weIJMAcIx1aAAIqk0lAuycompyFwBMHAsAZlj/lgw0rsy2AkhbsgK4Q+70CUBjxeFXsUb0G1HJDJC9rketZRcCWCJwHM8DgJm7b7ch+XizXm25QQxiEOcXvwGCWOhbCZC0qAAAAABJRU5ErkJggg=='
+        this.startingScreen.startLabel.image.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAABACAMAAADCg1mMAAAA/FBMVEUAAAD////8/Pz7+/v5+fn4+Pj39/f29vb19fXu7u7p6eno6Ojn5+fl5eXj4+Pg4ODd3d3b29va2trT09PS0tLPz8/MzMzLy8vKysrExMTDw8PBwcHAwMC/v7++vr69vb27u7uzs7OsrKyqqqqlpaWioqKhoaGgoKCZmZmRkZGQkJCPj4+IiIiAgIB/f395eXl3d3dmZmZgYGBeXl5cXFxYWFhXV1dVVVVERERBQUE8PDw3Nzc0NDQzMzMtLS0pKSknJyclJSUkJCQiIiIfHx8eHh4dHR0cHBwaGhoUFBQREREMDAwLCwsKCgoICAgHBwcEBAQCAgIBAQH///+1ajjJAAAAVHRSTlP//////////////////////////////////////////////////////////////////////////////////////////////////////////////wBT93LRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAF62lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMS0xMi0yM1QyMjo0MjowOCswODowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjEtMTItMjNUMjI6NTY6MjMrMDg6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjEtMTItMjNUMjI6NTY6MjMrMDg6MDAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIyIiBwaG90b3Nob3A6SUNDUHJvZmlsZT0ic1JHQiBJRUM2MTk2Ni0yLjEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzM3YjA5OGMtZDcwYi04ZTRlLWIzOTQtMjgyMmI5ZTdkYTRkIiB4bXBNTTpEb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6YWFjMDE3NGItZTllNi04NjQ5LTk0MjktZDQyOTA2OTkzM2RlIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6Yjc1MGI3YTMtZTllZS04NDQ2LTk1MmYtMTdiZmE5OTM4Y2I2Ij4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpiNzUwYjdhMy1lOWVlLTg0NDYtOTUyZi0xN2JmYTk5MzhjYjYiIHN0RXZ0OndoZW49IjIwMjEtMTItMjNUMjI6NDI6MDgrMDg6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAoV2luZG93cykiLz4gPHJkZjpsaSBzdEV2dDphY3Rpb249InNhdmVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjczN2IwOThjLWQ3MGItOGU0ZS1iMzk0LTI4MjJiOWU3ZGE0ZCIgc3RFdnQ6d2hlbj0iMjAyMS0xMi0yM1QyMjo1NjoyMyswODowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz770+gzAAADQklEQVR42u2aaZuTMBSFSVtHcRmjo4w6LtRWRa0aXIaMI25oVRzr8v9/jKwthCyXdoy0k/MxcID7nptA+tSyjIyMjIyMjIyMjIyMJPp6dTDYOp1pazC4+OrEAZju9PqoUK9/4cWJA/Dj+bPHl/L6z3nE/yA4LZy46SmOF1QGY+LaySB2Sby+AP7MZt9eXk6LO/t0+nP2m1++i+bCwbx8ezE6ide5C37dTWu49k503Ec1eTkUpzaIw3UmcC8t4cZHWP0IuUncoc0M2iwBko3WOiPOTFF1iJKyuxzit7Meo8bpxa+/5x8MUENO3Kg/6QFmFkTZKGkwcavXxrVL0BZWbQBijDgEbM6gxzg9Nsc8RboYGDFXoHCrPgAEgRXxWsAXp1g0v00I8eoAlFaNADAcwITXApgBQhm0brF2hF71mMKqEUAErx85lrQFPCbFrKtHlZctiaBWjQBoCwDIkrUAm2LYXOqhVp0AyCoAajmyKfrSVKXWtQFQzbGRohyA1KoTQLASgEqOjRQD6RSQWru6BmBJjs0UY8QsgnCr1tegDQfgcbZRZY6cFN35dzV/Byax6gTgwQEEHLub58hLMSxsRPBUEqtOANEqM6CcQj43xXJ62XwEMqvOzdAECoCKc8znUWPHTG0pAplVIwDLgdUv6GQqWyIWEwwHba36AMTOkitgbcsj2MxH8x3hKG5p1QYARECcEVWcEZYIcNTWqgsAgIDsEV1ViiUCHLe2agKgJCCNiAJOwfxzqJ4GUANQEFA8oaNex4vrx0tY9QCQElAl5ALauPEbENyqB4CEgLJDQVWMuK/SDgEQElDPUFAVpPMABAQAK9SGdACfAGSF5lfh18qN+NupbgHgEAC9oUQAkBPUr2xbHQfQIAB7QwsBpLugdOGnRLSd6BoAhgDwC0UCQIWzcwBqBKBfaEAAxPpvAO6nt9mD3WdBAPyFKqiCVv9gYPP/ZKEHwPdhepsrb6xWBOBf6D5JxP/pj5JM/hLWY9LR9NPbJ+fTgs48eP35yxGYwL/foejR4cPxnVNFG+6MHx1Ce2BT6rf2t5PK+5l6CG3vw2YBIZtSv3Uw3N27dTvXzd3hgWVkZGRkZGRkZGRktM76C82Vc8BXqIU+AAAAAElFTkSuQmCC'
         this.startingScreen.startLabel.texture = new THREE.Texture(this.startingScreen.startLabel.image)
         this.startingScreen.startLabel.texture.magFilter = THREE.NearestFilter
         this.startingScreen.startLabel.texture.minFilter = THREE.LinearFilter
@@ -492,20 +490,5 @@ export default class
             // y: - 4
         })
         this.container.add(this.sections.playground.container)
-    }
-
-    setEasterEggs()
-    {
-        this.easterEggs = new EasterEggs({
-            resources: this.resources,
-            car: this.car,
-            walls: this.walls,
-            objects: this.objects,
-            materials: this.materials,
-            areas: this.areas,
-            config: this.config,
-            physics: this.physics
-        })
-        this.container.add(this.easterEggs.container)
     }
 }
