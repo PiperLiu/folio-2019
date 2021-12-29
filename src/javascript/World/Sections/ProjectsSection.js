@@ -116,7 +116,7 @@ export default class ProjectsSection
                 floorTexture: this.resources.items.projectsThreejsJourneyFloorTexture,
                 link:
                 {
-                    href: 'https://threejs-journey.xyz',
+                    href: '#',
                     x: - 4.8,
                     y: - 3,
                     halfExtents:
@@ -125,10 +125,10 @@ export default class ProjectsSection
                         y: 1.5
                     }
                 },
-                distinctions:
-                [
-                    { type: 'fwa', x: 3.95, y: 4.15 }
-                ]
+                // distinctions:
+                // [
+                //     { type: 'fwa', x: 3.95, y: 4.15 }
+                // ]
             },
             {
                 name: 'Chartogne Taillet',
@@ -141,7 +141,7 @@ export default class ProjectsSection
                 floorTexture: this.resources.items.projectsChartogneFloorTexture,
                 link:
                 {
-                    href: 'https://chartogne-taillet.com',
+                    href: '#',
                     x: - 4.8,
                     y: - 3.3,
                     halfExtents:
@@ -150,12 +150,12 @@ export default class ProjectsSection
                         y: 1.5
                     }
                 },
-                distinctions:
-                [
-                    { type: 'awwwards', x: 3.95, y: 4.15 },
-                    { type: 'fwa', x: 5.6, y: 4.15 },
-                    { type: 'cssda', x: 7.2, y: 4.15 }
-                ]
+                // distinctions:
+                // [
+                //     { type: 'awwwards', x: 3.95, y: 4.15 },
+                //     { type: 'fwa', x: 5.6, y: 4.15 },
+                //     { type: 'cssda', x: 7.2, y: 4.15 }
+                // ]
             },
             {
                 name: 'Zenly',
@@ -168,7 +168,7 @@ export default class ProjectsSection
                 floorTexture: this.resources.items.projectsZenlyFloorTexture,
                 link:
                 {
-                    href: 'https://zen.ly',
+                    href: '#',
                     x: - 4.8,
                     y: - 4.2,
                     halfExtents:
@@ -177,12 +177,12 @@ export default class ProjectsSection
                         y: 1.5
                     }
                 },
-                distinctions:
-                [
-                    { type: 'awwwards', x: 3.95, y: 4.15 },
-                    { type: 'fwa', x: 5.6, y: 4.15 },
-                    { type: 'cssda', x: 7.2, y: 4.15 }
-                ]
+                // distinctions:
+                // [
+                //     { type: 'awwwards', x: 3.95, y: 4.15 },
+                //     { type: 'fwa', x: 5.6, y: 4.15 },
+                //     { type: 'cssda', x: 7.2, y: 4.15 }
+                // ]
             },
             {
                 name: 'priorHoldings',
@@ -195,7 +195,7 @@ export default class ProjectsSection
                 floorTexture: this.resources.items.projectsPriorHoldingsFloorTexture,
                 link:
                 {
-                    href: 'https://prior.co.jp/discover/',
+                    href: '#',
                     x: - 4.8,
                     y: - 3,
                     halfExtents:
@@ -204,12 +204,12 @@ export default class ProjectsSection
                         y: 1.5
                     }
                 },
-                distinctions:
-                [
-                    { type: 'awwwards', x: 3.95, y: 4.15 },
-                    { type: 'fwa', x: 5.6, y: 4.15 },
-                    { type: 'cssda', x: 7.2, y: 4.15 }
-                ]
+                // distinctions:
+                // [
+                //     { type: 'awwwards', x: 3.95, y: 4.15 },
+                //     { type: 'fwa', x: 5.6, y: 4.15 },
+                //     { type: 'cssda', x: 7.2, y: 4.15 }
+                // ]
             },
             {
                 name: 'orano',
@@ -222,7 +222,7 @@ export default class ProjectsSection
                 floorTexture: this.resources.items.projectsOranoFloorTexture,
                 link:
                 {
-                    href: 'https://www.orano.group/experience/innovation/',
+                    href: '#',
                     x: - 4.8,
                     y: - 3.4,
                     halfExtents:
@@ -231,12 +231,12 @@ export default class ProjectsSection
                         y: 1.5
                     }
                 },
-                distinctions:
-                [
-                    { type: 'awwwards', x: 3.95, y: 4.15 },
-                    { type: 'fwa', x: 5.6, y: 4.15 },
-                    { type: 'cssda', x: 7.2, y: 4.15 }
-                ]
+                // distinctions:
+                // [
+                //     { type: 'awwwards', x: 3.95, y: 4.15 },
+                //     { type: 'fwa', x: 5.6, y: 4.15 },
+                //     { type: 'cssda', x: 7.2, y: 4.15 }
+                // ]
             },
             {
                 name: 'citrixRedbull',
@@ -249,7 +249,7 @@ export default class ProjectsSection
                 floorTexture: this.resources.items.projectsCitrixRedbullFloorTexture,
                 link:
                 {
-                    href: 'https://thenewmobileworkforce.imm-g-prod.com/',
+                    href: '#',
                     x: - 4.8,
                     y: - 4.4,
                     halfExtents:
@@ -258,12 +258,12 @@ export default class ProjectsSection
                         y: 1.5
                     }
                 },
-                distinctions:
-                [
-                    { type: 'awwwards', x: 3.95, y: 4.15 },
-                    { type: 'fwa', x: 5.6, y: 4.15 },
-                    { type: 'cssda', x: 7.2, y: 4.15 }
-                ]
+                // distinctions:
+                // [
+                //     { type: 'awwwards', x: 3.95, y: 4.15 },
+                //     { type: 'fwa', x: 5.6, y: 4.15 },
+                //     { type: 'cssda', x: 7.2, y: 4.15 }
+                // ]
             },
             {
                 name: 'gleecChat',
@@ -277,7 +277,7 @@ export default class ProjectsSection
                 floorTexture: this.resources.items.projectsGleecChatFloorTexture,
                 link:
                 {
-                    href: 'http://gleec.imm-g-prod.com',
+                    href: '#',
                     x: - 4.8,
                     y: - 3.4,
                     halfExtents:
@@ -286,12 +286,12 @@ export default class ProjectsSection
                         y: 1.5
                     }
                 },
-                distinctions:
-                [
-                    { type: 'awwwards', x: 3.95, y: 4.15 },
-                    { type: 'fwa', x: 5.6, y: 4.15 },
-                    { type: 'cssda', x: 7.2, y: 4.15 }
-                ]
+                // distinctions:
+                // [
+                //     { type: 'awwwards', x: 3.95, y: 4.15 },
+                //     { type: 'fwa', x: 5.6, y: 4.15 },
+                //     { type: 'cssda', x: 7.2, y: 4.15 }
+                // ]
             },
             {
                 name: 'keppler',
@@ -304,7 +304,7 @@ export default class ProjectsSection
                 floorTexture: this.resources.items.projectsKepplerFloorTexture,
                 link:
                 {
-                    href: 'https://brunosimon.github.io/keppler/',
+                    href: '#',
                     x: 2.75,
                     y: - 1.1,
                     halfExtents:
@@ -313,7 +313,7 @@ export default class ProjectsSection
                         y: 1.5
                     }
                 },
-                distinctions: []
+                // distinctions: []
             }
         ]
     }

@@ -89,20 +89,20 @@ export default class InformationSection
         // Options
         this.links.options = [
             {
-                href: 'https://twitter.com/bruno_simon/',
-                labelTexture: this.resources.items.informationContactTwitterLabelTexture
+                href: 'https://piperliu.gitee.io/playground-js/#/',
+                labelTexture: this.resources.items.informationyuanshitongTexture
             },
             {
-                href: 'https://github.com/brunosimon/',
-                labelTexture: this.resources.items.informationContactGithubLabelTexture
+                href: 'https://github.com/brunosimon/folio-2019/',
+                labelTexture: this.resources.items.informationyuandizhiTexture
             },
             {
-                href: 'https://www.linkedin.com/in/simonbruno77/',
-                labelTexture: this.resources.items.informationContactLinkedinLabelTexture
+                href: 'https://github.com/PiperLiu/folio-2019',
+                labelTexture: this.resources.items.informationbendizhiTexture
             },
             {
-                href: 'mailto:simon.bruno.77@gmail.com',
-                labelTexture: this.resources.items.informationContactMailLabelTexture
+                href: '#',
+                labelTexture: this.resources.items.informationzhixieTexture
             }
         ]
 
@@ -158,7 +158,7 @@ export default class InformationSection
         this.activities.geometry = new THREE.PlaneBufferGeometry(2 * this.activities.multiplier, 1 * this.activities.multiplier, 1, 1)
 
         // Texture
-        this.activities.texture = this.resources.items.informationActivitiesTexture
+        this.activities.texture = this.resources.items.informationSpecialthanksTexture
         this.activities.texture.magFilter = THREE.NearestFilter
         this.activities.texture.minFilter = THREE.LinearFilter
 

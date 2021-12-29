@@ -32,8 +32,17 @@ import introInstructionsOtherSource from '../models/intro/instructions/other.png
 import introArrowKeyBaseSource from '../models/intro/arrowKey/base.glb'
 import introArrowKeyCollisionSource from '../models/intro/arrowKey/collision.glb'
 
+import introABaseSource from '../models/intro/a/base.glb'
+import introACollisionSource from '../models/intro/a/collision.glb'
+
 import introBBaseSource from '../models/intro/b/base.glb'
 import introBCollisionSource from '../models/intro/b/collision.glb'
+
+import introEBaseSource from '../models/intro/e/base.glb'
+import introECollisionSource from '../models/intro/e/collision.glb'
+
+import introHBaseSource from '../models/intro/h/base.glb'
+import introHCollisionSource from '../models/intro/h/collision.glb'
 
 import introRBaseSource from '../models/intro/r/base.glb'
 import introRCollisionSource from '../models/intro/r/collision.glb'
@@ -47,6 +56,9 @@ import introNCollisionSource from '../models/intro/n/collision.glb'
 import introOBaseSource from '../models/intro/o/base.glb'
 import introOCollisionSource from '../models/intro/o/collision.glb'
 
+import introPBaseSource from '../models/intro/p/base.glb'
+import introPCollisionSource from '../models/intro/p/collision.glb'
+
 import introSBaseSource from '../models/intro/s/base.glb'
 import introSCollisionSource from '../models/intro/s/collision.glb'
 
@@ -55,6 +67,9 @@ import introICollisionSource from '../models/intro/i/collision.glb'
 
 import introMBaseSource from '../models/intro/m/base.glb'
 import introMCollisionSource from '../models/intro/m/collision.glb'
+
+import introYBaseSource from '../models/intro/y/base.glb'
+import introYCollisionSource from '../models/intro/y/collision.glb'
 
 import introCreativeBaseSource from '../models/intro/creative/base.glb'
 import introCreativeCollisionSource from '../models/intro/creative/collision.glb'
@@ -113,12 +128,12 @@ import informationStaticFloorShadowSource from '../models/information/static/flo
 import informationBaguetteBaseSource from '../models/information/baguette/base.glb'
 import informationBaguetteCollisionSource from '../models/information/baguette/collision.glb'
 
-import informationContactTwitterLabelSource from '../models/information/static/contactTwitterLabel.png'
-import informationContactGithubLabelSource from '../models/information/static/contactGithubLabel.png'
-import informationContactLinkedinLabelSource from '../models/information/static/contactLinkedinLabel.png'
-import informationContactMailLabelSource from '../models/information/static/contactMailLabel.png'
+import informationyuanshitongSource from '../models/information/static/yuanshitong.png'
+import informationyuandizhiSource from '../models/information/static/yuandizhi.png'
+import informationbendizhiSource from '../models/information/static/bendizhi.png'
+import informationzhixieSource from '../models/information/static/zhixie.png'
 
-import informationActivitiesSource from '../models/information/static/activities.png'
+import informationSpecialthanksSource from '../models/information/static/specialthanks.png'
 
 // Playground
 import playgroundStaticFloorShadowSource from '../models/playground/static/floorShadow.png'
@@ -248,8 +263,23 @@ export default class Resources extends EventEmitter
             { name: 'introArrowKeyBase', source: introArrowKeyBaseSource },
             { name: 'introArrowKeyCollision', source: introArrowKeyCollisionSource },
 
+            { name: 'introABase', source: introABaseSource },
+            { name: 'introACollision', source: introACollisionSource },
+
             { name: 'introBBase', source: introBBaseSource },
             { name: 'introBCollision', source: introBCollisionSource },
+
+            { name: 'introEBase', source: introEBaseSource },
+            { name: 'introECollision', source: introECollisionSource },
+
+            { name: 'introHBase', source: introHBaseSource },
+            { name: 'introHCollision', source: introHCollisionSource },
+
+            { name: 'introPBase', source: introPBaseSource },
+            { name: 'introPCollision', source: introPCollisionSource },
+
+            { name: 'introYBase', source: introYBaseSource },
+            { name: 'introYCollision', source: introYCollisionSource },
 
             { name: 'introRBase', source: introRBaseSource },
             { name: 'introRCollision', source: introRCollisionSource },
@@ -329,12 +359,12 @@ export default class Resources extends EventEmitter
             { name: 'informationBaguetteBase', source: informationBaguetteBaseSource },
             { name: 'informationBaguetteCollision', source: informationBaguetteCollisionSource },
 
-            { name: 'informationContactTwitterLabel', source: informationContactTwitterLabelSource, type: 'texture' },
-            { name: 'informationContactGithubLabel', source: informationContactGithubLabelSource, type: 'texture' },
-            { name: 'informationContactLinkedinLabel', source: informationContactLinkedinLabelSource, type: 'texture' },
-            { name: 'informationContactMailLabel', source: informationContactMailLabelSource, type: 'texture' },
+            { name: 'informationyuanshitong', source: informationyuanshitongSource, type: 'texture' },
+            { name: 'informationyuandizhi', source: informationyuandizhiSource, type: 'texture' },
+            { name: 'informationbendizhi', source: informationbendizhiSource, type: 'texture' },
+            { name: 'informationzhixie', source: informationzhixieSource, type: 'texture' },
 
-            { name: 'informationActivities', source: informationActivitiesSource, type: 'texture' },
+            { name: 'informationSpecialthanks', source: informationSpecialthanksSource, type: 'texture' },
 
             // Playground
             { name: 'playgroundStaticBase', source: playgroundStaticBaseSource },
